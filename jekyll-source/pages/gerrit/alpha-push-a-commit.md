@@ -11,7 +11,7 @@ repository. When your updates are ready, you push those changes from your local
 machine directly to the remote repository.
 
 {{site.data.alerts.note}}
-Note: Alternatively, if you are familiar with GitHub, you make a pull request.
+Alternatively, if you are familiar with GitHub, you make a pull request.
 This request asks an authorized member of the repository to pull changes from
 your copy of the repository.
 {{site.data.alerts.end}}

@@ -45,8 +45,8 @@ steps in the [previous section](cloning_a_repository_with_the_commit-msg_hook.ht
 However, instead of using the command from the **Clone with commit-msg hook**
 text box, copy the command from the **Clone** text box.
 
-Warning: CLoning this command means that your commits do not automatically
-include a Change-Id.
+{% include warning.html content="Cloning this command means that your commits do
+not automatically include a Change-Id." %}
 
 ## What's Next
 

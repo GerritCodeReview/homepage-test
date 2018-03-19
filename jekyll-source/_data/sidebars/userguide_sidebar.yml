@@ -39,7 +39,6 @@ entries:
     folderitems:
 
     - title: All How-to Guides
-      url: /install-quick.html
       output: web
 
       subfolders:
