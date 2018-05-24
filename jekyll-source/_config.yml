@@ -33,6 +33,13 @@ port: 4000
 exclude:
   - .idea/
   - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_subject_line: Gerrit Code Review Feedback
