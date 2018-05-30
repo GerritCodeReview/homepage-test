@@ -1,25 +1,19 @@
-FROM ruby:2.1
-MAINTAINER mrafayaleem@gmail.com
+FROM ruby:2.4-alpine
 
-RUN apt-get clean \
-  && mv /var/lib/apt/lists /var/lib/apt/lists.broke \
-  && mkdir -p /var/lib/apt/lists/partial
+RUN apk add --no-cache build-base gcc bash cmake
 
-RUN apt-get update
+RUN gem install jekyll
 
-RUN apt-get install -y \
-    node \
-    python-pygments \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/
-
-WORKDIR /tmp
-ADD Gemfile /tmp/
-ADD Gemfile.lock /tmp/
-RUN bundle install
-
-VOLUME /src
 EXPOSE 4000
 
-WORKDIR /src
-ENTRYPOINT ["jekyll", "serve", "-H", "0.0.0.0"]
+WORKDIR /site
+
+# create new site by setting -e JEKYLL_NEW=true
+ENV JEKYLL_NEW false
+
+COPY docker-entrypoint.sh /usr/local/bin/
+
+# on every container start we'l'
+ENTRYPOINT [ "docker-entrypoint.sh" ]
+
+CMD [ "bundle", "exec", "jekyll", "serve", "--force_polling", "-H", "0.0.0.0", "-P", "4000" ]
