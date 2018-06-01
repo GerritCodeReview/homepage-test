@@ -40,6 +40,16 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - Dockerfile
+  - docker-compose.yml
+  - docker-entrypoint.sh
+  - createtag
+  - firebase-debug.log
+  - pdf-all.sh
+  - pdf-mydoc.sh
+  - pdf-product1.sh
+  - pdf-product2.sh
+  - update.sh
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_subject_line: Gerrit Code Review Feedback
