@@ -1,4 +1,10 @@
-### What is notedb?
+---
+title: "Notedb"
+permalink: notedb.html
+---
+
+
+## What is notedb?
 
 Notedb is the successor to ReviewDb: a replacement database backend for Gerrit.
 The goal is to read code review metadata from the same set of repositories that

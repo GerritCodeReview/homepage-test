@@ -1,4 +1,9 @@
-# Introduction
+---
+title: "SQL Merge User Accounts"
+permalink: sqlmergeuseraccounts.html
+---
+
+## Introduction
 
 Sometimes users wind up with two accounts on a Gerrit server, this is especially
 common with OpenID installations when the user forgets which OpenID provider he
@@ -18,7 +23,7 @@ merge by updating all records in the database in a transaction, but does not
 commit it at the end. This allows the administrator to double check any records
 by query before committing the merge result for good.
 
-# load\_merge.sql
+## load\_merge.sql
 
 ```
 CREATE TEMP TABLE links
@@ -79,7 +84,7 @@ AND t.account_id = l.to_id
 ORDER BY t.preferred_email;
 ```
 
-# merge\_accounts.sql
+## merge\_accounts.sql
 
 ```
 DROP TABLE to_del;

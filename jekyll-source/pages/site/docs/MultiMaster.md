@@ -1,10 +1,16 @@
+---
+title: "MultiMaster"
+permalink: multimaster.html
+---
+
+
 We spent some time at the May 2012 Hackathon outlining an incremental approach
 to making open source Gerrit clusterable (the version running for android-review
 and gerrit-review is already clustered but uses much of Google's proprietary
 technologies such as GFS and BigTable). Several incremental steps were outlined
 on how to move Gerrit in that direction.
 
-# Shared Git Repo - Shared DB
+## Shared Git Repo - Shared DB
 
 This is the simplest case for Gerrit multi master, so it is likely the first
 step which is needed by most other ideas is to support a very simple
@@ -26,9 +32,9 @@ protocol will need to be developed for masters to inform their peers of a needed
 eviction (a plugin is up for [review]
 (https://gerrit-review.googlesource.com/#/c/37460/1) which does this using UDP).
 
-# 2 could be easily solved by manually determining a submit master and later
+## 2 could be easily solved by manually determining a submit master and later
 
-upgrading to some sort of voting mechanism among peer masters to choose a submit
+Upgrading to some sort of voting mechanism among peer masters to choose a submit
 master, these would be incremental approaches. The issue is that each server
 runs a plugin queue and can therefor can attempt to merge changes to the same
 branches at the same time resulting in "failed to lock" errors which will leave
@@ -37,7 +43,7 @@ queues, might it also cause issues by attempting to being merged twice? If a
 peer goes down, might its queue be the only holder of certain changes which then
 will be missed until a restart of some server?
 
-# 3 can be solved similarly to #2
+## 3 can be solved similarly to #2
 
 Select a replication master. The replication master is responsible to rerun full
 replication on startup and anytime a master goes down (since it may have currently
@@ -62,7 +68,7 @@ A [thread]
 (https://groups.google.com/d/msg/repo-discuss/ZIIuBaCz9Jc/ZTQGpuy_Y1MJ) about
 some what is required for this setup to work well.
 
-# Multi Site Masters with Separate Backends
+## Multi Site Masters with Separate Backends
 
 The main additional problem with separate backends is: resolving ref updates in
 a globally safe way. In Google’s implementation, this is solved by placing the
@@ -74,7 +80,7 @@ involved in helping to coordinate this, but details were not really discussed.
 A plugin for ZooKeeper ref-db is up for [review]
 (https://gerrit-review.googlesource.com/#/c/37460/1).
 
-# Distributed FS
+## Distributed FS
 
 Finally, it was felt that once multi sites were conquered, that a distributed
 filesystem may eventually be needed to scale the git repos effectively, Hadoop
