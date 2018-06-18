@@ -1,4 +1,9 @@
-# Review Kung Fu
+---
+title: "Review Kung Fu"
+permalink: ReviewKungFu.html
+---
+
+## Review Kung Fu
 
 As you progress on your path of Review Kung Fu your skill may take you to new
 levels. Your objective is to spot potential problems and help others find
@@ -16,7 +21,7 @@ worked hard for this blessing and you proudly wear his praise; not because of
 your arrogance, but because Diffy wants those seeking to improve their Kung Fu
 to easily recognize those whose skill may help them deliver.
 
-# Diffy's Badges
+## Diffy's Badges
 
 ### Toes
 

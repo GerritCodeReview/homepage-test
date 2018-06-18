@@ -1,4 +1,7 @@
-# Overview
+---
+title: "Outstanding Topics"
+permalink: outstandingtopics.html
+---
 
 Following a [discussion on the mailing list]
 (https://groups.google.com/forum/#!topic/repo-discuss/qKz7AtZDlC4) we decided to
