@@ -4,7 +4,7 @@ topnav:
 - title: Topnav
   items:
     - title: About
-      external_url: https://www.gerritcodereview.com/about.md
+      url: /about.html
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns

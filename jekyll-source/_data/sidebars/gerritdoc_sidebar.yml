@@ -42,6 +42,10 @@ entries:
       url: /intro-gerrit-walkthrough.html
       output: web
 
+    - title: Gerrit's History
+      url: /about.html
+      output: web
+
   - title: "Tutorials"
     output: web
     folderitems:
