@@ -1,4 +1,7 @@
-# Gerrit Code Review - Public Keys
+---
+title: "Public Keys"
+permalink: public-keys.html
+---
 
 The following public keys are are available on the
 [Ubuntu Public Key Server](https://keyserver.ubuntu.com/), and are used to sign:
