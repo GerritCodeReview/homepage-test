@@ -7,7 +7,7 @@ Gerrit Code Review releases can be downloaded from the
 (.war files and API artifacts, version 2.9 and later).
 
 Artifacts deployed to Maven Central are signed with the maintainer's key.
-Please refer to the [list of maintainers' keys](public-keys.md).
+Please refer to the [list of maintainers' keys](public-keys.html).
 
 Latest release: **[2.14.3](/releases/2.14.md)**.
 
@@ -17,7 +17,7 @@ Latest release: **[2.14.3](/releases/2.14.md)**.
 
 * Private Changes
 
-[Release notes for Gerrit 2.15](/releases/2.15.md)
+[Release notes for Gerrit 2.15](/releases/2.15.html)
 
 ## 2.14 {#2.14}
 
@@ -35,7 +35,7 @@ Latest release: **[2.14.3](/releases/2.14.md)**.
 
 * Secondary index with Elastic Search (experimental)
 
-[Release notes for Gerrit 2.14](/releases/2.14.md)
+[Release notes for Gerrit 2.14](/releases/2.14.html)
 
 ## 2.13 {#2.13}
 
@@ -47,7 +47,7 @@ Latest release: **[2.14.3](/releases/2.14.md)**.
 
 * Access control for git submodule subscriptions
 
-[Release notes for Gerrit 2.13](/releases/2.13.md).
+[Release notes for Gerrit 2.13](/releases/2.13.html).
 
 ## 2.12 {#2.12}
 
@@ -55,7 +55,7 @@ Latest release: **[2.14.3](/releases/2.14.md)**.
 
 * Support for GPG Keys and signed pushes.
 
-[Release notes for Gerrit 2.12](/releases/2.12.md).
+[Release notes for Gerrit 2.12](/releases/2.12.html).
 
 ## Older Releases {#older}
 

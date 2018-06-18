@@ -1,4 +1,9 @@
-# Introduction
+---
+title: "RoadMap"
+permalink: roadmap.html
+---
+
+## Introduction
 
 There are many ideas suggested, and discussions which lead to decisions about
 the future direction and designs of Gerrit which happen in many forums: on IRC,
@@ -13,7 +18,7 @@ there are also times when people just want to get a feel for what might be
 coming down the pike. So we will attempt to illustrate some of these decisions
 here.
 
-# Architecture
+## Architecture
 
 *   The REST API is viewed as the longterm stable approach for RPCs with the
     Gerrit Server. At this point new UI elements and new ssh commands should be
