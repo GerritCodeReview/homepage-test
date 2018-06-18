@@ -1,0 +1,61 @@
+[debug] [2018-05-30T05:03:33.855Z] ----------------------------------------------------------------------
+[debug] [2018-05-30T05:03:33.857Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2018-05-30T05:03:33.857Z] CLI Version:   3.18.5
+[debug] [2018-05-30T05:03:33.857Z] Platform:      linux
+[debug] [2018-05-30T05:03:33.857Z] Node Version:  v8.11.0
+[debug] [2018-05-30T05:03:33.857Z] Time:          Tue May 29 2018 22:03:33 GMT-0700 (PDT)
+[debug] [2018-05-30T05:03:33.857Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-30T05:03:33.866Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-05-30T05:03:33.866Z] > authorizing via signed-in user
+[debug] [2018-05-30T05:03:33.867Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-05-30T05:03:33.868Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/qpjMsZSB-s6-9lSXsEnH1xslo1U7RKLNQgh3Zgt01DA',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue May 29 2018 22:03:33 GMT-0700 (PDT)
+[debug] [2018-05-30T05:03:33.974Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-30T05:03:34.011Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/api-project-164060093628  
+  
+ Tue May 29 2018 22:03:34 GMT-0700 (PDT)
+[debug] [2018-05-30T05:03:34.357Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-30T05:03:34.358Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/api-project-164060093628/tokens  
+  
+ Tue May 29 2018 22:03:34 GMT-0700 (PDT)
+[debug] [2018-05-30T05:03:34.763Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'api-project-164060093628'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing jekyll-source/_site directory for upload...
+[debug] [2018-05-30T05:03:35.185Z] Error: EACCES: permission denied, open '/usr/local/google/home/dshevitz/gerrit-website/homepage-test/jekyll-source/_site/Dockerfile'
+[error] 
+[error] Error: There was an issue preparing Hosting files for upload.
+[debug] [2018-05-30T05:04:16.062Z] ----------------------------------------------------------------------
+[debug] [2018-05-30T05:04:16.064Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2018-05-30T05:04:16.064Z] CLI Version:   3.18.5
+[debug] [2018-05-30T05:04:16.064Z] Platform:      linux
+[debug] [2018-05-30T05:04:16.064Z] Node Version:  v8.11.0
+[debug] [2018-05-30T05:04:16.064Z] Time:          Tue May 29 2018 22:04:16 GMT-0700 (PDT)
+[debug] [2018-05-30T05:04:16.064Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-30T05:04:16.073Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-05-30T05:04:16.073Z] > authorizing via signed-in user
+[debug] [2018-05-30T05:04:16.075Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/api-project-164060093628  
+  
+ Tue May 29 2018 22:04:16 GMT-0700 (PDT)
+[debug] [2018-05-30T05:04:16.402Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-30T05:04:16.403Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/api-project-164060093628/tokens  
+  
+ Tue May 29 2018 22:04:16 GMT-0700 (PDT)
+[debug] [2018-05-30T05:04:16.766Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'api-project-164060093628'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing jekyll-source/_site directory for upload...
+[debug] [2018-05-30T05:04:17.124Z] Error: EACCES: permission denied, open '/usr/local/google/home/dshevitz/gerrit-website/homepage-test/jekyll-source/_site/Dockerfile'
+[error] 
+[error] Error: There was an issue preparing Hosting files for upload.

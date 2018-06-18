@@ -1,4 +1,9 @@
-# Gerrit Installations in the Wild
+---
+title: "Showcases"
+permalink: showcases.html
+---
+
+## Gerrit Installations in the Wild
 
 ## Open Source Projects
 
