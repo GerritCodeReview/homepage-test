@@ -1,4 +1,8 @@
-# Origin Story
+---
+title: " Gerrit's History"
+sidebar: gerritdoc_sidebar
+permalink: about.html
+---
 
 ## Google Mondrian
 
