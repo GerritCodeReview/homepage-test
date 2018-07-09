@@ -1,4 +1,9 @@
-# Scaling Dimensions
+---
+title: "Scaling Dimensions"
+permalink: scaling.html
+---
+
+## Scaling Dimensions
 
 As you scale, you will always run into some issues. Depending on your specific
 setup those issues may be very different from what other people are running
@@ -28,9 +33,9 @@ on are:
 
 --------------------------------------------------------------------------------
 
-# Servers
+## Servers
 
-## Master
+### Master
 
 The first step to scaling is to scale your master server. Some easy, but pricey
 ways to scale your master are:
@@ -42,7 +47,7 @@ ways to scale your master are:
     repos are not well repacked (seeks can be crippling here).
 *   Network, I suspect that most large installs use 10Gb Ethernet
 
-## Mirrors/Slaves
+### Mirrors/Slaves
 
 Once you have a decent master, it is probably worth adding either some git
 mirrors (if you do not need ACLs on your repos), or Gerrit slaves to help
@@ -51,7 +56,7 @@ and WAN traffic if you place them nearer to your users/build hosts. This can be
 particularly useful for remote sites. Some of the larger installations have at
 least 25 of these.
 
-### Shared Storage and Replication Entries For Slaves
+#### Shared Storage and Replication Entries For Slaves
 
 A common practice is to use site local shared storage (NFS...) on remote slaves
 when there is more than one slave at the remote site. One major advantage of
@@ -65,7 +70,7 @@ by using a load balancer on the receiving end to distribute each incoming push
 to a different slave (since the back-end storage is the same, they all will
 still see every update).
 
-### DB Slaves
+#### DB Slaves
 
 DB slaves are being used on remote sites so that remote slaves do not have to
 traverse the WAN to talk to the master DB. Both PostGreSQL and MYSQL are being
@@ -74,7 +79,7 @@ WAN traffic related to high ref counts when doing repo syncs (the [change cache]
 (https://gerrit-review.googlesource.com/#/c/35220) was also designed to help
 with this.)
 
-## Multi - Master
+### Multi - Master
 
 The Gerrit MultiMaster plug-in describes how to setup a single site multi-master
 with a shared storage back-end for git repository data. However, there are
@@ -84,7 +89,7 @@ relies on proprietary technology to do so.
 
 --------------------------------------------------------------------------------
 
-# Jetty
+## Jetty
 
 The default built in web container which Gerrit uses is Jetty. Some
 installations have had serious "Failed to dispatch" errors which lead to 100%CPU
@@ -97,7 +102,7 @@ instead to replace Jetty.
 
 --------------------------------------------------------------------------------
 
-# Repo Syncs
+## Repo Syncs
 
 With beefier servers, many people have [seen]
 (http://groups.google.com/group/repo-discuss/browse_thread/thread/c8f003f2247d7157/ad6915f5558df8f5?lnk=gst&q=repo+sync+error#ad6915f5558df8f5)
@@ -112,7 +117,7 @@ Is this related to resetting the key after a certain amount of data?
 
 --------------------------------------------------------------------------------
 
-# Java HEAP and GC
+## Java HEAP and GC
 
 Operations on git repositories can consume lots of memory. If you consume more
 memory than your java heap, your server may either run out of memory and fail,
@@ -145,14 +150,14 @@ amount of gc thrashing your server performs.
 
 --------------------------------------------------------------------------------
 
-# Replication
+## Replication
 
 There are many scalability issues which can plague replication, most are related
 to high ref counts, those are not specifically mentioned here, so you will
 likely need to first be familiar with the "High Ref Counts" section to make
 replication run smoothly.
 
-## JSch
+### JSch
 
 Jsch has threading issues which seem to serialize replication even across worker
 groups. This has lead some teams to perform replication without using ssh (Jsch
@@ -162,7 +167,7 @@ replicate via git daemon without authentication or encryption. This is
 particularly useful if you have sites which replicate to at very different
 speeds.
 
-## Failed To Lock
+### Failed To Lock
 
 With older versions of the replication plug-in, your replication can start
 running into contention and failing with "Failed to Lock" errors in your logs.
@@ -178,20 +183,20 @@ be configured to retry these failed pushes.
 
 --------------------------------------------------------------------------------
 
-# High Ref Counts
+## High Ref Counts
 
 High ref counts can have impacts in many places in the git/jgit/Gerrit stacks.
 There are many ongoing fixes and tweaks to alleviated many of these problems,
 but some of them still remain. Some can be "unofficially" worked around.
 
-## git daemon mirrors
+### git daemon mirrors
 
 Current versions (prior to git 1.7.11) will use an [excessive amount of CPU]
 (http://marc.info/?l=git&m=133310001303068&w=2) when receiving pushes on sites
 with high ref counts. Upgrading git there can help drastically reduce your
 replication time in these cases.
 
-## git
+### git
 
 Suggest to your users that they use the latest git possible, many of the older
 versions (which are still the defaults on many distros) have severe problems
@@ -200,7 +205,7 @@ with high ref counts. Particularly [bad]
 1.7.7. Git 1.8.1 seems to have some speed-ups in fetches of high ref counts
 compared to even 1.7.8.
 
-## jgit
+### jgit
 
 jGit still has a [performance problem]
 (http://groups.google.com/group/repo-discuss/browse_thread/thread/d0914922dc565516)
@@ -212,7 +217,7 @@ reduce upload and replication times in Gerrit if applied for repos with many (>
 
 There are some very high performance patches which make jgit extremely fast.
 
-## Tags
+### Tags
 
 If you have android repositories, you likely use around 400-600 of them. Cross
 project tagging can be [problematic]
@@ -221,7 +226,7 @@ to this problem.
 
 --------------------------------------------------------------------------------
 
-## ACLS
+### ACLS
 
 On servers with little or no anonymous access, and large change counts, it can
 be disastrous when non-logged-in users access a change-list page. A change-list
@@ -241,7 +246,7 @@ be sped up?
 
 --------------------------------------------------------------------------------
 
-# Disk Space / File Cleanup
+## Disk Space / File Cleanup
 
 Installations which do not have enough spare disk space for their repos can run
 into problems easily. Be aware that git repos contain highly compressed data and
@@ -252,7 +257,7 @@ to plan for this and leave a lot of free space for this to never be an issue.
 This is particularly important for those using SSDs where they might be more
 likely to skimp on space.
 
-## Git GC Repo Explosions
+### Git GC Repo Explosions
 
 Under certain conditions git gc can cause a repo explosion (jgit gc does not
 suffer from this problem because it puts unreachable objects in a packfile),
@@ -267,7 +272,7 @@ Some of the situations which can cause many unreferenced objects:
 *   Tags are [deleted](http://marc.info/?l=git&m=131829057610072&w=2) from the
     linux repo
 
-## Git GC
+### Git GC
 
 Running GC regularly is important, particularly on sites with heavy uploads.
 Older versions of jgit do not have built in gc and require using git gc. Setting
@@ -280,7 +285,7 @@ however excessive pack file churn can also be a problem. A potential [solution]
 Pack file churn can lead to several issues, RAM utilization, Disk utilization
 and excessive WAN utilization for file-system mirroring scripts (such as rysnc).
 
-## Keep and Noz files
+### Keep and Noz files
 
 Currently, Gerrit may leave behind some temporary files in your git repos when
 it shuts down (particularly if ungraceful). There are some temporary files which
@@ -290,14 +295,14 @@ don't in themselves don't take space, but they will prevent git gc from
 repacking the packfile they are associated with which can lead to poor disk
 space utilization and performance issues.
 
-## ~/.gerritcodereview
+### ~/.gerritcodereview
 
 The temporary unjared war files in here can build up. (This has been move to
 review\_site/tmp in Gerrit 2.5+)
 
 --------------------------------------------------------------------------------
 
-# hooks
+## hooks
 
 Servers with lots of RAM are susceptible to slow forks which can delay each hook
 invocation quite a bit. When java uses over 10G of memory, it may add at least a

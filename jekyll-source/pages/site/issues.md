@@ -1,10 +1,12 @@
-# Issue Tracking
+---
+title: "Issue Tracking"
+sidebar: gerritdoc_sidebar
+permalink: issues.html
+---
 
 [Issues][list] are tracked at bugs.chromium.org.
 
 [list]: https://bugs.chromium.org/p/gerrit/issues/list?can=2
-
-[TOC]
 
 ## Status
 
