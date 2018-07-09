@@ -23,8 +23,6 @@ topnav_dropdowns:
           external_url: https://gerrit-review.googlesource.com/q/status:open+project:gerrit
     - title: Docs
       folderitems:
-        - title: Alpha
-          url: /alpha-intro-quick.html
         - title: Latest
           external_url: https://gerrit-documentation.storage.googleapis.com/Documentation/2.14.5.1/index.html
         - title: Wiki
