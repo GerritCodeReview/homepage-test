@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dc7977af_6092a52e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 8
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1010008
+      },
+      "writtenOn": "2018-07-09T20:45:23Z",
+      "side": 1,
+      "message": "Yes, this contains some historical documents that we migrated over from the code.google.com wiki. The content isn\u0027t available anywhere else.",
+      "range": {
+        "startLine": 20,
+        "startChar": 23,
+        "endLine": 21,
+        "endChar": 0
+      },
+      "revId": "c0eb55dc65b037cc75461a89bd9789e25cc91812",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
