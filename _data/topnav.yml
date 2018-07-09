@@ -16,7 +16,7 @@ topnav_dropdowns:
         - title: Source
           external_url: https://gerrit.googlesource.com/gerrit/
         - title: Releases
-          external_url: https://www.gerritcodereview.com/releases/README.md
+          url: /releases-readme.html
         - title: Builds
           external_url: https://gerrit-ci.gerritforge.com/
         - title: Reviews
