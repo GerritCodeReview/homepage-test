@@ -7,8 +7,6 @@ hide_navtoggle: true
 toc: false
 ---
 
-# Gerrit Code Review Releases
-
 Gerrit Code Review releases can be downloaded from the
 [download site](https://gerrit-releases.storage.googleapis.com/index.html)
 (.war files only) or from
@@ -18,17 +16,37 @@ Gerrit Code Review releases can be downloaded from the
 Artifacts deployed to Maven Central are signed with the maintainer's key.
 Please refer to the [list of maintainers' keys](public-keys.html).
 
-Latest release: **[2.14.3](/releases/2.14.md)**.
+Latest release: **[2.15](/releases/2.15.md)**.
 
-[TOC]
+## 2.16 *(In development)*
 
-## 2.15 *(In development)* {#2.15}
+* Inline editing support in PolyGerrit UI.
 
-* Private Changes
+* Redesigned UI for PolyGerrit based on material.
 
-[Release notes for Gerrit 2.15](/releases/2.15.html)
+[Release notes for Gerrit 2.16](/releases/2.16.md)
 
-## 2.14 {#2.14}
+## 2.15
+
+* New change workflows for changes not yet ready for full review (formerly
+  Drafts).
+
+* The new PolyGerrit UI is mature enough for most uses.
+
+* Account data is stored in NoteDb.
+
+* NoteDb for change metadata is considered stable, and new sites use it by
+  default.
+
+* NoteDb migration for change metadata is available.
+
+* Made several improvements and additions to the documentation to help users
+  find the information they need.
+
+[Release notes for Gerrit 2.15](/releases/2.15.md)
+
+
+## 2.14
 
 * Changes can be assigned to specific users
 
@@ -46,7 +64,7 @@ Latest release: **[2.14.3](/releases/2.14.md)**.
 
 [Release notes for Gerrit 2.14](/releases/2.14.html)
 
-## 2.13 {#2.13}
+## 2.13
 
 * Support for Git LFS
 
@@ -58,7 +76,7 @@ Latest release: **[2.14.3](/releases/2.14.md)**.
 
 [Release notes for Gerrit 2.13](/releases/2.13.html).
 
-## 2.12 {#2.12}
+## 2.12
 
 * New change submission workflows: 'Submit Whole Topic' and 'Submitted Together'.
 
@@ -66,7 +84,7 @@ Latest release: **[2.14.3](/releases/2.14.md)**.
 
 [Release notes for Gerrit 2.12](/releases/2.12.html).
 
-## Older Releases {#older}
+## Older Releases
 
 Release notes for releases prior to 2.12 can be found on the old
 [documentation site](http://gerrit-documentation.storage.googleapis.com/ReleaseNotes/index.html).
