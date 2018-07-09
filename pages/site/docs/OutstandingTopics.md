@@ -1,6 +1,9 @@
 ---
 title: "Outstanding Topics"
 permalink: outstandingtopics.html
+hide_sidebar: true
+hide_navtoggle: true
+toc: false
 ---
 
 Following a [discussion on the mailing list]
