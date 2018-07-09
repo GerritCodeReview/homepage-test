@@ -14,17 +14,23 @@ Gerrit Code Review releases can be downloaded from the
 (.war files and API artifacts, version 2.9 and later).
 
 Artifacts deployed to Maven Central are signed with the maintainer's key.
-Please refer to the [list of maintainers' keys](public-keys.html).
+Please refer to the [list of maintainers' keys](/public-keys.html).
 
-Latest release: **[2.15](/releases/2.15.md)**.
+Latest release: **[2.15](/2.15.md)**.
 
 ## 2.16 *(In development)*
+
+* GWT UI is deprecated
+
+* PolyGerrit is now the default UI.
+
+* Experimental Dark Mode in PolyGerrit.
 
 * Inline editing support in PolyGerrit UI.
 
 * Redesigned UI for PolyGerrit based on material.
 
-[Release notes for Gerrit 2.16](/releases/2.16.md)
+[Release notes for Gerrit 2.16](/2.16.md)
 
 ## 2.15
 
@@ -43,7 +49,7 @@ Latest release: **[2.15](/releases/2.15.md)**.
 * Made several improvements and additions to the documentation to help users
   find the information they need.
 
-[Release notes for Gerrit 2.15](/releases/2.15.md)
+[Release notes for Gerrit 2.15](/2.15.md)
 
 
 ## 2.14
@@ -62,7 +68,7 @@ Latest release: **[2.15](/releases/2.15.md)**.
 
 * Secondary index with Elastic Search (experimental)
 
-[Release notes for Gerrit 2.14](/releases/2.14.html)
+[Release notes for Gerrit 2.14](/2.14.html)
 
 ## 2.13
 
@@ -74,7 +80,7 @@ Latest release: **[2.15](/releases/2.15.md)**.
 
 * Access control for git submodule subscriptions
 
-[Release notes for Gerrit 2.13](/releases/2.13.html).
+[Release notes for Gerrit 2.13](/2.13.html).
 
 ## 2.12
 
@@ -82,7 +88,7 @@ Latest release: **[2.15](/releases/2.15.md)**.
 
 * Support for GPG Keys and signed pushes.
 
-[Release notes for Gerrit 2.12](/releases/2.12.html).
+[Release notes for Gerrit 2.12](/2.12.html).
 
 ## Older Releases
 
