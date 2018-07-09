@@ -1,3 +1,12 @@
+---
+title: "Gerrit Code Review Releases"
+sidebar: gerritdoc_sidebar
+permalink: releases-readme.html
+hide_sidebar: true
+hide_navtoggle: true
+toc: false
+---
+
 # Gerrit Code Review Releases
 
 Gerrit Code Review releases can be downloaded from the

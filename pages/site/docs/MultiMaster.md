@@ -1,6 +1,9 @@
 ---
 title: "MultiMaster"
 permalink: multimaster.html
+hide_sidebar: true
+hide_navtoggle: true
+toc: false
 ---
 
 

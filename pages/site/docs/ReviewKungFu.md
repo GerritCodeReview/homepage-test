@@ -1,6 +1,9 @@
 ---
 title: "Review Kung Fu"
 permalink: ReviewKungFu.html
+hide_sidebar: true
+hide_navtoggle: true
+toc: false
 ---
 
 ## Review Kung Fu

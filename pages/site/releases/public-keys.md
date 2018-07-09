@@ -1,6 +1,9 @@
 ---
 title: "Public Keys"
 permalink: public-keys.html
+hide_sidebar: true
+hide_navtoggle: true
+toc: false
 ---
 
 The following public keys are are available on the

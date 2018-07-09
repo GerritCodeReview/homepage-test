@@ -1,6 +1,9 @@
 ---
 title: "Scaling Dimensions"
 permalink: scaling.html
+hide_sidebar: true
+hide_navtoggle: true
+toc: false
 ---
 
 ## Scaling Dimensions

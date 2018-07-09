@@ -1,6 +1,9 @@
 ---
 title: "SQL Merge User Accounts"
 permalink: sqlmergeuseraccounts.html
+hide_sidebar: true
+hide_navtoggle: true
+toc: false
 ---
 
 ## Introduction

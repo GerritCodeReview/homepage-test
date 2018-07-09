@@ -1,6 +1,9 @@
 ---
 title: "Showcases"
 permalink: showcases.html
+hide_sidebar: true
+hide_navtoggle: true
+toc: false
 ---
 
 ## Gerrit Installations in the Wild
