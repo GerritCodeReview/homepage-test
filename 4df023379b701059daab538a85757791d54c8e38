@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "73bff875_4c5bbae9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1010008
+      },
+      "writtenOn": "2018-07-10T20:05:41Z",
+      "side": 1,
+      "message": "I\u0027m not sure I would describe the out-of-date release notes as an \"error\". This is bringing in the latest documentation from the existing homepage repo.",
+      "revId": "4df023379b701059daab538a85757791d54c8e38",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3a2e987a_2ec8d87c",
+        "filename": "index.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1010008
+      },
+      "writtenOn": "2018-07-10T20:05:41Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this link to 2.15.md (.html?) on the running site, rather than a link out to gerritcodereview.com?",
+      "revId": "4df023379b701059daab538a85757791d54c8e38",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5115d20f_ad6fefa2",
+        "filename": "pages/site/releases/2.15.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1010008
+      },
+      "writtenOn": "2018-07-10T20:05:41Z",
+      "side": 1,
+      "message": "These links are going to break when we change the DNS entry to point at the Firebase site. These links need to change to point to https://gerrit-releases.storage.googleapis.com/... instead.\n\nOk to do that in a followup change.",
+      "range": {
+        "startLine": 9,
+        "startChar": 21,
+        "endLine": 9,
+        "endChar": 80
+      },
+      "revId": "4df023379b701059daab538a85757791d54c8e38",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
