@@ -1,6 +1,6 @@
 ---
 title: "Review Kung Fu"
-permalink: ReviewKungFu.html
+permalink: reviewkungfu.html
 hide_sidebar: true
 hide_navtoggle: true
 toc: false
