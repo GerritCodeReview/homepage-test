@@ -59,7 +59,7 @@ service.
 You can choose from different versions to download from here:
 
   - [A list of releases
-    available](https://www.gerritcodereview.com/download/index.html)
+    available](https://gerrit-releases.storage.googleapis.com/index.html)
 
 This tutorial is based on version 2.2.2, and you can download that from
 this link
